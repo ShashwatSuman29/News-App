@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap");
 
 * {
   margin: 0;
@@ -57,6 +57,10 @@ nav {
   margin-left: 10px;
 }
 
+#search-btn:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+}
+
 #blog-container {
   padding: 3rem 0;
   display: flex;
@@ -90,15 +94,38 @@ nav {
   color: #141414;
   font-size: 1.7rem;
   font-weight: 600;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 .blog-card p {
   font-size: 1.2rem;
   padding-top: 0.7rem;
-  font-family: 'poppins';
+  font-family: "poppins";
 }
- /* responsive */
+
+footer {
+  background-color: #2d4c50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.3rem 0;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+footer h3 {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* responsive */
 @media (max-width: 500px) {
   nav {
     padding: 0 20px;
