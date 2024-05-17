@@ -10,7 +10,7 @@ const searchButton = document.getElementById("search-btn");
 // fetching news articles through api key
 async function fetchRandomNews() {
   try {
-    const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&pageSize=10&apikey=${apiKey}`;
+    const apiUrl = `https://newsapi.org/v2/top-headlines?sources=techcrunch&pageSize=10&apikey=${apiKey}`;
     const response = await fetch(apiUrl);
 
     const data = await response.json();
@@ -50,7 +50,7 @@ searchButton.addEventListener("click",  async ()=>{
 
 
 // creating html cards using js
- 
+
 function displayBlogs(articles) {
   blogContainer.innerHTML = "";
   articles.forEach((articles) => {
